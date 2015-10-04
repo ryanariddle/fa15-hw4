@@ -1,0 +1,9 @@
+<h1>Create New</h1>
+  <%= form_for @dog do |g| %> <!-- Create form for dog object -->
+    Name: <%= g.text_field :name %> <!-- Create a text field that sends its value under the key name-->
+    Age: <%= g.text_field :age %><!-- Create a text field that sends its value under the key age -->
+    <%= g.submit %> <!-- Create submit button-->
+  <% end %>
+
+
+<p>Find me in app/views/dogs/new.html.erb</p>
